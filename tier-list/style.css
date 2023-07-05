@@ -1,3 +1,43 @@
 * {
   margin: 0;
 }
+
+.main-content {
+  max-width: 1040px;
+  background-color: rgb(43, 43, 43);
+  margin: 0 auto;
+  margin-top: 200px;
+  border: 1px solid #000;
+}
+
+.container {
+  display: flex;
+  border: 1px solid #000;
+  
+}
+
+.container-text {
+  width: 100px;
+  font-family: arial;
+  font-size: 15px;
+  line-height: 19px;
+  color: #fff;
+  border-right: 1px solid #000;
+  padding: 30px 30px;
+}
+
+.span-number {
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.span {
+  background-color: rgb(43, 43, 43);
+  color: #fff;
+  padding: 30px;
+  font-size: 24px;
+  border: 2px solid #3f3c3c;
+  margin: 0 5px;
+}
