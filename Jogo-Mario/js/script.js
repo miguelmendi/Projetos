@@ -30,3 +30,16 @@ const loop = setInterval(()=> {
 },10)
 
 document.addEventListener("keydown", jump)
+
+
+function gameOver()
+{
+    alert ("You got  " + score + " coins")
+
+    document.getElementById("popup").innerHTML ="Game Over!";
+    document.getElementById("popup").style.display = "block"; 
+
+    setTimeout(messageHide, 5000); /* pop up appears when game is over */
+}
+
+var score = 0;
