@@ -202,5 +202,5 @@ buttonPlay.addEventListener("click", () => {
   menu.style.display = "none"
   canvas.style.filter = "none"
 
-  snake = [initialPosition]
+  snake = [initialPosition] 
 })
