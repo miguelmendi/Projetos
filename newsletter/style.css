@@ -27,6 +27,7 @@ body {
   max-width: 1200px;
   padding: 30px;
   border-radius: 25px;
+  gap: 100px;
 }
 
 .title-h1 {
@@ -42,7 +43,7 @@ body {
   font-weight: 400;
   color: hsl(235, 18%, 26%);
   margin: 10px 0;
-  font-size: 24px;
+  font-size: 16px;
 }
 
 .checked-box {
@@ -55,4 +56,51 @@ body {
   display: flex;
   gap: 10px;
   align-items: center;
+  margin: 10px 0px;
+}
+
+.text-p {
+  font-family: "Roboto";
+  font-weight: 400;
+  color: hsl(235, 18%, 26%);
+  font-size: 16px;
+}
+
+.input-email {
+  margin-top: 30px;
+  display: grid;
+}
+
+.input {
+  padding: 15px;
+  max-width: 100%;
+  margin: 10px 0;
+  border: 1px solid gainsboro;
+  border-radius: 7px;
+  font-size: 16px;
+  
+}
+
+.button-box {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  width: 370px;
+}
+
+.button {
+  cursor: pointer;
+  background-color: hsl(234, 29%, 20%);
+  color: white;
+  border: none;
+  padding: 15px;
+  font-family: "Roboto";
+  font-weight: 700;
+  margin: 20px 0;
+  width: 370px;
+  border-radius: 10px;
+}
+
+.aside {
+  background-color: white;
 }
