@@ -102,5 +102,17 @@ body {
 }
 
 .aside {
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 100px;
+  border-radius: 15px;
   background-color: white;
+  max-width: 400px;
+}
+
+.aside-icon {
+  display: flex;
+  justify-content: left;
 }
