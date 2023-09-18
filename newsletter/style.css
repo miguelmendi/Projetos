@@ -89,7 +89,6 @@ body {
 }
 
 .button {
-  cursor: pointer;
   background-color: hsl(234, 29%, 20%);
   color: white;
   border: none;
@@ -99,6 +98,11 @@ body {
   margin: 20px 0;
   width: 370px;
   border-radius: 10px;
+}
+
+.button:disabled,
+.button[disabled]{
+  opacity: 0.5;
 }
 
 .aside {

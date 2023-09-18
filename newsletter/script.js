@@ -7,4 +7,12 @@ function validateEmail(email) {
   return re.test(email);
 }
 
+const button = document.querySelector('#button');
+
+const disableButton = () => {
+    button.disabled = true;
+};
+
+button.addEventListener('click', disableButton);
+
 console.log(validateEmail('texto@texto.com'))
