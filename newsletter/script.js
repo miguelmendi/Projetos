@@ -1,7 +1,5 @@
 const email = document.querySelector(".input").value
 
-
-
 function validateEmail(email) {
   var re = /\S+@\S+\.\S+/;
   return re.test(email);
@@ -10,9 +8,12 @@ function validateEmail(email) {
 const button = document.querySelector('#button');
 
 const disableButton = () => {
-    button.disabled = true;
+    
+    if(validateEmail != true) {
+      button.disabled = true;
+    } else {
+      button.disabled = false
+    }
 };
-
-button.addEventListener('click', disableButton);
 
 console.log(validateEmail('texto@texto.com'))
