@@ -1,19 +1,25 @@
-const email = document.querySelector(".input").value
+let input = document.querySelector(".input")
 
 function validateEmail(email) {
   var re = /\S+@\S+\.\S+/;
   return re.test(email);
 }
 
-const button = document.querySelector('#button');
+let button = document.querySelector('#button');
 
-const disableButton = () => {
+
+
+input.addEventListener("input", () => {
+  
+  if (input.value.length > 0) {
+   
+    button.disabled = false;
+    button.style.cursor = "pointer"
+  } else {
     
-    if(validateEmail != true) {
-      button.disabled = true;
-    } else {
-      button.disabled = false
-    }
-};
+    button.disabled = true;
+  }
+});
 
-console.log(validateEmail('texto@texto.com'))
+
+
