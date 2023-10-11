@@ -119,10 +119,18 @@ body {
 }
 
 .aside-icon {
-  display: flex;
-  justify-content: left;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-content: space-between;
+  gap: 300px;
+  
 }
 
 .active {
   display: flex;
+}
+
+.close {
+  cursor: pointer;
 }

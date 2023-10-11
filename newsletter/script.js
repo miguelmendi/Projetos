@@ -1,4 +1,9 @@
 let input = document.querySelector(".input")
+let close = document.querySelector(".close")
+
+close.addEventListener("click", () => {
+  aside.classList.remove("active")
+})
 
 function validateEmail(email) {
   var re = /\S+@\S+\.\S+/;
