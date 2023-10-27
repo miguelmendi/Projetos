@@ -16,7 +16,7 @@ let aside = document.querySelector(".aside")
 const dismiss = document.querySelector("#dismiss")
 
 dismiss.addEventListener("click", () => {
-  aside.classList.add("active")
+  aside.classList.add("active") 
 })
 
 button.addEventListener("click", () => {
