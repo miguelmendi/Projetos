@@ -23,6 +23,24 @@ let firstCard = ""
 let secondCard = ""
 
 const checkCards = () => {
+  const firstCharacter = firstCard.getAttribute("data-character")
+  const SecondCharacter = secondCard.getAttribute("data-character")
+
+  if(firstCharacter === SecondCharacter) {
+    firstCard.firstChild.classList.add("disabled-card")
+    secondCard.firstChild.classList.add("disabled-card")
+    
+    firstCard = ""
+    secondCard = ""
+  } else {
+    setTimeout (() => {
+      firstCard.classList.remove("reveal-card")
+      secondCard.classList.remove("reveal-card")
+
+      firstCard = ""
+      secondCard = ""
+    }, 500)
+  }
 
 }
 
